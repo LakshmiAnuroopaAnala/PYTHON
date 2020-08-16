@@ -1,0 +1,6 @@
+def add(m,n): #FORMAL PARAMS
+    print(m+n)
+a=int(input("Enter A Value "))    
+b=int(input("Enter A Value "))
+add(a,b)#ACTUAL PARAMS
+add(10,20)
