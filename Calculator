@@ -1,0 +1,19 @@
+def add(m,n):
+    return m+n
+def sub(m,n):
+    return m-n
+def mul(m,n):
+    return m*n
+def div(m,n):
+    if(n==0):
+        return "INVALID"
+    else:
+        return m/n
+    
+       
+a=int(input("Enter Value 1 - "))
+b=int(input("Enter Value 2 - "))
+print("Addition",add(a,b))
+print("Subtraction",sub(a,b))
+print("Multiplication",mul(a,b))
+print("Division",div(a,b))
