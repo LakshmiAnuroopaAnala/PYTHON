@@ -1,0 +1,18 @@
+n=input()
+asc=n[0]<=n[1]
+dec=n[0]>=n[1]
+i=1
+while i<(len(n)-1):
+    if asc:
+        asc=n[i]<=n[i+1]
+    elif dec:
+        asc=n[i]>=n[i+1]
+    else:
+        break
+    i=i+1
+if asc:
+    print("Ascending Order")
+elif dec:
+    print("Decending Order")
+else:
+    print("No Format")
