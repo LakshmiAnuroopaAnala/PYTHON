@@ -1,0 +1,11 @@
+import math
+n1=int(input("Enter Lower Range - "))
+n2=int(input("Enter Upper Range - "))
+for i in range(n1,n2+1):
+    sq=int(math.sqrt(i))
+    for j in range(2,sq+1):
+        if i%j == 0:
+        #print(n,"Is A Composite number")
+           break
+    else:
+        print(i)
