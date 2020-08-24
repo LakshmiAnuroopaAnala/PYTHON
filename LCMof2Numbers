@@ -1,0 +1,15 @@
+n1=int(input("Enter value 1 "))
+n2=int(input("Enter value 2 "))
+if n1<n2:
+    big=n2
+    small=n1
+else:
+    big=n1
+    small=n2
+if(big%small==0):
+    print("LCM = ",big)
+else:
+    for i in range(2,big+1):
+        if (small*i)%big==0:
+            print(i*small)
+            break
