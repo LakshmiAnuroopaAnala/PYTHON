@@ -2,7 +2,7 @@ import math
 def prime(n):
     sq=int(math.sqrt(i))
     for j in range(2,sq+1):
-        if i%j == 0:
+        if n%j == 0:
            break
     else:
         print(i)
