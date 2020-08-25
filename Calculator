@@ -11,8 +11,8 @@ def div(m,n):
         return m/n
     
        
-a=int(input("Enter Value 1 - "))
-b=int(input("Enter Value 2 - "))
+a=int(input("Enter Number 1 - "))
+b=int(input("Enter Number 2 - "))
 print("Addition",add(a,b))
 print("Subtraction",sub(a,b))
 print("Multiplication",mul(a,b))
