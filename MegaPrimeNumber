@@ -1,0 +1,22 @@
+#MEGA PRIME NUMBER
+import math
+def prime(n):
+    sq=int(math.sqrt(n))
+    for j in range(2,sq+1):
+        if n==1:
+            return True
+        if n%j == 0:
+           return False
+    else:
+        return True
+n=int(input())
+while n:
+    r=n%10
+    p=prime(r)
+    n=n//10
+    if(p==False):
+        print("Not Mega Prime")
+        break
+if(p==True):
+    print("Mega Prime")
+    
