@@ -8,7 +8,7 @@ def prime(n):
             break
     else:
         return True
-num=int(input())
+num=int(input("Enter A Value "))
 for i in range(num-1,2-1,-1):
     p=prime(i)
     if(p==True):
