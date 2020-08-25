@@ -1,0 +1,31 @@
+##NEAREST PRIME NUMBER
+import math
+def prime(n):
+    sq=int(math.sqrt(n))
+    for i in range(2,sq+1):
+        if(n%i==0):
+            return False
+            break
+    else:
+        return True
+num=int(input())
+for i in range(num-1,2-1,-1):
+    p=prime(i)
+    if(p==True):
+        print(i)
+        a=i
+        break
+j=num+1
+while True:
+    p=prime(j)
+    if(p==True):
+        print(j)
+        b=j
+        break
+    j=j+1
+if abs(num-a)>abs(b-num):
+    print(b," IS NEAREST")
+elif  abs(num-a)<abs(b-num):
+    print(a," IS NEAREST")
+else:
+    print(a,b,"BOTH ARE NEAREST")
