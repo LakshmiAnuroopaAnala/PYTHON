@@ -9,7 +9,7 @@ def prime(n):
            return False
     else:
         return True
-n=int(input())
+n=int(input("Enter A Value "))
 while n:
     r=n%10
     p=prime(r)
