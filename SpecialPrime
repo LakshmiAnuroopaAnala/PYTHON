@@ -1,0 +1,32 @@
+##SPECIAL PRIME
+import math
+def prime(n):
+    sq=int(math.sqrt(n))
+    for i in range(2,sq+1):
+        if n%i==0:
+            break
+    else:
+        return 1
+def prime_n(n):
+    n1=n-1
+    while True:
+        if prime(n1):
+            return n1
+        else:
+            n1=n1-1
+n=int(input())
+if prime(n):
+    a=prime_n(n)
+    b=prime_n(a)
+    while True:
+        if a+b+1==n:
+            print(a,b)
+            print(n," Is Special Prime")
+            break
+        else:
+            a=b
+            b=prime_n(a)
+        if a==2 or b==2:
+            break
+else:
+    print("Not Prime")
