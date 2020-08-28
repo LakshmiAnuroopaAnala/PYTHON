@@ -1,0 +1,22 @@
+import math
+def prime(n):
+    sq=int(math.sqrt(n))
+    for i in range(2,sq+1):
+        if n%i==0:
+            return False
+    else:
+        return True
+num=int(input())
+if prime(num):
+    while num!=0:
+        num=num//10
+        if prime(num):
+            k=prime(num)
+        else:
+            print("NOT A RIGHT TRUNCATED PRIME")
+            k=prime(num)
+            break
+    if k==True:
+        print("RIGHT TRUNCATED PRIME")      
+else:
+    print("NoT RIGHT TRUNCATED PRIME")
