@@ -1,0 +1,33 @@
+import math
+def prime(n):
+    sq=int(math.sqrt(n))
+    for i in range(2,sq+1):
+        if n%i==0:
+            return False
+    else:
+        return True
+    
+def rev(r):
+    rev=0
+    while r!=0:
+        rem=r%10
+        rev=(rev*10)+rem
+        r=r//10
+    print(rev)    
+    return r
+
+num=int(input())
+rev(num)
+if prime(rev(num))==True:
+    while num!=0:
+        num=num//10
+        if prime(rev(num)):
+            k=prime(rev(num))
+        else:
+            print("NOT A RIGHT TRUNCATED PRIME")
+            k=prime(rev(num))
+            break
+    if k==True:
+        print("RIGHT TRUNCATED PRIME")      
+else:
+    print("NoT RIGHT TRUNCATED PRIME")
