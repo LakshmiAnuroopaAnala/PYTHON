@@ -1,0 +1,7 @@
+def FullTriangle(n):
+    for i in range(n):
+        print(("A "*(i+1)).center(2*n))
+    for i in range(n-1,0,-1):
+        print(("A "*(i)).center(2*n))
+l=int(input("Input A Value "))
+FullTriangle(l)
