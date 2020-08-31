@@ -1,0 +1,5 @@
+def patrn(n):
+    for i in range(n):
+        print(("* "*(i+1)).center(2*n))
+p=int(input("Enter Number Of Lines "))
+patrn(p)
