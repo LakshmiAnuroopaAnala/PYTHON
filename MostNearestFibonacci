@@ -1,0 +1,18 @@
+def MostNearestFibonacci(n):
+    f=0
+    s=1
+    while f+s<=n:
+        t1=f+s
+        f=s
+        s=t1
+    t2=f+s
+    print(t1,t2)
+    if abs(t1-n)<abs(t2-n):
+        print("The Most Nearest Fibonacci Number is ",t1)
+    elif abs(t1-n)>abs(t2-n):
+        print("The Most Nearest Fibonacci Number is ",t2)
+    else:
+        print("The Most Nearest Fibonacci Number is ",n)
+    
+num=int(input())
+MostNearestFibonacci(num)
