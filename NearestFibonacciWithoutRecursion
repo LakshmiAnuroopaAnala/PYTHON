@@ -1,10 +1,9 @@
 def fib(n):
     f=0
     s=1
-    print(f,s)
     while f+s<n:
         f=s
         s=f+s
-    print(s,end=" ")
+    print(s)
 num=int(input())
 fib(num)
