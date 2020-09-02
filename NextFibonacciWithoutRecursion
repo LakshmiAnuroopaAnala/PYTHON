@@ -1,0 +1,11 @@
+def nextFibonacci(n):
+    f=0
+    s=1
+    while f+s<=n:
+        t=f+s
+        f=s
+        s=t
+    print(f+s)        
+num=int(input())
+nextFibonacci(num)
+        
