@@ -1,0 +1,10 @@
+def fib(n):
+    a,b=0,1
+    while n>=b:
+        if n==b:
+            return b
+        a,b=b,a+b
+    print(a)    
+    return fib(n-a)     
+num=int(input())
+print(fib(num))
