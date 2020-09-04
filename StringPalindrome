@@ -1,7 +1,5 @@
-s1=input()
-s2=input()
-for i in range(0,len(s1)):
-    if s1[i]<s2[i]:
-        print(s1[i],end="")
-    else:
-        print(s2[i],end="")
+s1=input()  
+if s1==s1[::-1]:
+    print("Palindrome")
+else:
+    print("Not A Palindrome")
