@@ -1,0 +1,9 @@
+n=int(input("Enter The Length Of The List "))
+l=list()
+for i in range(0,n):
+    l.append(int(input()))
+for i in range(0,len(l)-1):
+    for j in range(i,len(l)-1):
+        if l[i]==l[j]:
+            l.pop(j)
+print(l)            
