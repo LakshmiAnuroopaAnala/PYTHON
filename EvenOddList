@@ -1,0 +1,12 @@
+n=int(input("Enter The Length Of The List "))
+l=list()
+evenList=list()
+oddList=list()
+for i in range(0,n):
+    l.append(int(input()))
+for i in l:
+    if i%2==0:
+        evenList.append(i)
+    else:
+        oddList.append(i)
+print(evenList,"\n",oddList) 
