@@ -1,0 +1,8 @@
+n=int(input("Enter The Length Of The List "))
+l=list()
+l2=list()
+for i in range(0,n):
+    l.append(input())
+for j in l:
+    l2.append(j[::-1])
+print(l,"\n",l2) 
