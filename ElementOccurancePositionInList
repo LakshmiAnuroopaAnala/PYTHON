@@ -1,0 +1,10 @@
+l=list()
+len=int(input("Length Of List "))
+print("Elements ")
+for i in range(0,len):
+    l.append(input())
+e=input("Element To Be Search ")
+print("Position ")
+for i in range(0,len):
+    if l[i]==e:
+        print(i,end=" ")
