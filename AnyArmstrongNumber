@@ -1,0 +1,21 @@
+def length(n):
+    c=0
+    while n!=0:
+        n=n//10
+        c=c+1
+    return c
+def Armstrong(n):
+    l=length(n)
+    num=n
+    rem=0
+    arm=0
+    while n!=0:
+        rem=n%10
+        n=n//10
+        arm=arm+(rem**l)
+    if num==arm:
+        print(l,"Digit Armstrong Number")
+    else:
+        print("Not A Armstrong Number") 
+number=int(input())
+Armstrong(number)
