@@ -1,0 +1,5 @@
+s=input("String ")
+r=int(input("Number Of Rotations "))
+for i in range(0,r):
+      print(s[i+1:len(s):1],end="")
+      print(s[0:i+1:1])
