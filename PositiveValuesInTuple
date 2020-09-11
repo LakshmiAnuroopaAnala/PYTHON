@@ -1,0 +1,8 @@
+t=tuple()
+l=int(input("Length "))
+print("Elemens")
+for i in range(0,l):
+    t+=(int(input()),)
+print("Positive Values In Tuple Are ")
+for i in range(0,len(t)):
+    if t[i]>=0:
