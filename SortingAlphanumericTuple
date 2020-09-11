@@ -1,0 +1,9 @@
+s=input("Enter Alphanumeric Value")
+alpha=[]
+num=[]
+for i in s:
+    if i.isalpha():
+        alpha.append(i)
+    else:
+        num.append(i)
+print(' '.join(sorted(alpha)+sorted(num)))
