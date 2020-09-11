@@ -1,0 +1,14 @@
+def LinearSearch(l,s):
+    for i in range(0,len(l)):
+        if l[i]==s:
+            print("Positon ",i)
+            break
+    else:
+        print("Element Not Found")
+n=int(input("Length Of String "))
+print("Elements ")
+l=list()
+for i in range(0,n):
+    l.append(input())
+s=input("Value To Search ")
+LinearSearch(l,s)
