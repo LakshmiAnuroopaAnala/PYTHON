@@ -1,0 +1,4 @@
+s="a4b3c5"
+for i in range(0,len(s)-1):
+    if s[i].isalpha():
+         print(s[i]*int(s[i+1]),end="")
