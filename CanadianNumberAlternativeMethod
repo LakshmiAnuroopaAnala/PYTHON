@@ -1,0 +1,20 @@
+def individualSquaresSum(n):
+    s1=0
+    num=n
+    while n!=0:
+        rem=n%10
+        s1=s1+(rem**2)
+        n=n//10   
+    factorsSum(num,s1)
+    
+def factorsSum(n,s1):
+    s2=0
+    for i in range(2,int((n**0.5)+1)):
+        if n%i==0:
+          s2=s2+i+(n//i)
+    if s1==s2:
+        print("Canadian Number")
+    else:
+        print("Not A Canadian Number")
+n=int(input())
+individualSquaresSum(n)
