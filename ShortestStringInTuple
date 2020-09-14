@@ -1,0 +1,6 @@
+t=("Roopa","Ayush","Anu","X")
+min=t[0]
+for i in t:
+    if len(i)<len(min):
+        min=i
+print(min)
