@@ -1,0 +1,11 @@
+arr=[1,5,5,25,125]
+r=5
+v=0
+for i in range(0,len(arr)):
+    p=arr[i]*r
+    print(p)
+    for j in range(i,len(arr)):
+        if arr[j]==p:
+            p=arr[j]*r
+            v+=1   
+print(v//2)       
