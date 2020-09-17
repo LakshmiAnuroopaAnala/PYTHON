@@ -1,0 +1,2 @@
+s1=set(input().split())
+print(" ".join(sorted(s1)))
