@@ -1,0 +1,4 @@
+color=["Black","White","Red","Blue","Green","Yellow","Pink"]
+num=[1,2,3,4,5,6,7]
+val=zip(color,num)
+print(list(val))
