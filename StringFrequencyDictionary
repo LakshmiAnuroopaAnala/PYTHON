@@ -1,0 +1,10 @@
+#STRING FREQUENCY
+s=input("Enter SENTENCE ") #Input
+l=[]                       #List Initialization
+l=s.split()                #Splitting String And Pass into List
+wordFrequency=[l.count(p) for p in l]#Findind The Frequency Of Every Word
+print(dict(zip(l,wordFrequency)))#Converting List And WordFrequency Into Dictionary
+
+#SAMPLE OUTPUT
+##Enter SENTENCE hi hi hi how are are You
+##{'hi': 3, 'how': 1, 'are': 2, 'You': 1}
