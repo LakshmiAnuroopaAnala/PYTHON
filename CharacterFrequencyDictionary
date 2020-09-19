@@ -1,0 +1,5 @@
+lc={}
+s="Helloh"
+for i in s:
+    lc[i]=lc.get(i,0)+1
+print(lc)
