@@ -1,0 +1,3 @@
+emp={1:"Ravi",2:"Spandhana",3:"Rajiv",4:"Praveen"}
+n=input("Employee Name ")
+print([number for number,name in emp.items() if name==n])
