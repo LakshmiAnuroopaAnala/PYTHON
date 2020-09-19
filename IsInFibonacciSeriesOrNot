@@ -1,0 +1,11 @@
+import math
+def isPerfectSquareOrNot(x):
+   s = int(math.sqrt(x))
+   return s*s == x
+def isFibonacciOrNot(n):
+   return isPerfectSquareOrNot(5*n*n + 4) or isPerfectSquareOrNot(5*n*n - 4)
+n=int(input())
+if (isFibonacciOrNot(n) == True):
+    print ("fibonacci")
+else:
+    print ("not fibonacci")
