@@ -1,0 +1,7 @@
+print("Before Deletion")
+emp={1:"Ravi",2:"Spandhana",3:"Rajiv",4:"Praveen"}
+print(emp)
+if 4 in emp:
+    del emp[4]
+print("After Deletion")
+print(emp)
