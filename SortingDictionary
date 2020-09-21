@@ -1,0 +1,4 @@
+#sorting dictionary
+color_d={"red":"#FF0000","green":"#080000","blue":"#000fff","white":"#FFFFFF"}
+for key in sorted(color_d):
+    print("%s%s"%(key,color_d[key]))
