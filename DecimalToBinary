@@ -1,5 +1,4 @@
 n=int(input("Decimal Value : "))
-num=n
 s=""
 while n !=0 :
     s=s+str(n%2)
