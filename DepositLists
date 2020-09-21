@@ -1,0 +1,10 @@
+d1=[1122,1234,1256,1389,1122,1234,1389,1122,1389,1234]
+d2=[1134,1256,1399,1455,1256,1134,1134,1455,1256,1134]
+d3=[1256,1455,1122,1899,1256,1122,1455,1899,1455,1122]
+d1=set(d1)
+d2=set(d2)
+d3=set(d3)
+print("Deposit on day 1 and day 3 not in d2",(d1 & d3) - d2)
+print("Deposit on day 1 and day 2 and day3",d1 & d3 & d2)
+print("Deposit atleast 2 days",(d1 & d2)|(d2 & d3)|(d3 & d1))
+print("Number Of Customers",len(d1|d2|d3))
