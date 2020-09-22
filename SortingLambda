@@ -1,0 +1,3 @@
+sm=[("eng",88),("sci",90),("mat",97),("ss",82)]
+sm.sort(key=lambda x:x[1])
+print(sm)
