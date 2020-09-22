@@ -1,9 +1,12 @@
 def DecimalToHexadecimal(n):
     val=""
+    l=["A","B","C","D","E","F"]
     while n!=0:
-        val=val+str(n%16)
+        if n%16>9:
+            val=val+l[(n%16)%10]
+        else:
+            val=val+str(n%16)
         n=n//16
     return val[::-1]
 n=int(input("Decimal :"))
-print(hex(n))
 print("Hexadecimal :",DecimalToHexadecimal(n))
