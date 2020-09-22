@@ -1,0 +1,9 @@
+def DecimalToOctal(n):
+    val=""
+    while n!=0:
+        val=val+str(n%8)
+        n=n//8
+    return val[::-1]
+n=int(input("Decimal :"))
+print(oct(n))
+print("Octal :",DecimalToOctal(n))
