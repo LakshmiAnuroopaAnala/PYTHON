@@ -1,0 +1,11 @@
+def DecimalToHexadecimal(n):
+    val=""
+    while n!=0:
+        if n%16>9:
+            val=val+chr((n%16)+55)
+        else:
+            val=val+str(n%16)
+        n=n//16
+    return val[::-1]
+n=int(input("Decimal :"))
+print("Hexadecimal :",DecimalToHexadecimal(n))
