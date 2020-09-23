@@ -1,0 +1,12 @@
+def HexaToDecimal(n):
+    val=0
+    p=0
+    for i in range(len(n)-1,-1,-1):
+        if n[i].isdigit():
+            val=val+int(n[i])*16**p
+        else:
+            val=val+(ord(n[i])-55)*16**p
+        p+=1
+    return val     
+n=input()
+print(HexaToDecimal(n))
