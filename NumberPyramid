@@ -1,0 +1,13 @@
+n=int(input())
+val=""
+num=n
+while num!=0:    
+    for i in range(1,n+1):
+        for j in range(i,-1,-1):
+            val=val+str(j)
+        for p in range(1,i+1):
+            val=val+str(p)
+        print(" "*num,end="")
+        print(val)
+        val=""
+        num-=1
