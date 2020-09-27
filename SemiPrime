@@ -1,0 +1,16 @@
+# SEMI PRIME - PRODUCT OF TWO PRIME NUMBERS SHOULD BE EQUAL TO GIVEN NUMBER,THEN THAT NUMBER IS SEMIPRIME
+def prime(num):    # TO CHECK THE GIVEN NUMBER IS PRIME OR NOT
+    for i in range(2,num//2):
+        if num%i==0:
+            return 0
+    else:
+        return 1
+def semiPrime(n):
+    for i in range(2,n//2+1):
+        for j in range(2,i+1):
+            if prime(i) and prime(j) and i*j==n:    #
+                return "Semi Prime"
+    else:
+        return "Not A Semi Prime"
+n=int(input())
+print(semiPrime(n))
