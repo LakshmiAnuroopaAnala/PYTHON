@@ -1,0 +1,11 @@
+d=dict()
+k=int(input("Number Of Students "))
+v=int(input("Number Of Subjects "))
+for i in range(k):
+    k=input("Student Name ")
+    l=list()
+    print("Marks ")
+    for j in range(v):
+        l.append(input())
+    d[k]=l
+print("Students Along With Marks"d)  
