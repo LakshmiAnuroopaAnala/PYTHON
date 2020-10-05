@@ -1,0 +1,6 @@
+d={}
+n=int(input("Number OF Students "))
+for i in range(1,n+1):
+    k=input()
+    d[k]=list(map(int,input().split()))
+print(d)
