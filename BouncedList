@@ -1,0 +1,9 @@
+l=[2,5,3,4,3] #T or s
+l=[2,3,1,5,3] #F 0r no
+print(l)
+for i in range(0,len(l)-2,2):
+        if not (l[i]<l[i+1] and l[i+1]>l[i+2]):
+            print("False")
+            break
+else:
+    print("True")
