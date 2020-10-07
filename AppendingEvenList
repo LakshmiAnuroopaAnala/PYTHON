@@ -1,0 +1,8 @@
+l=[2,3,4,1,6,7,8,0]
+# 2,6,3,7,4,8,1,0
+l2=list()
+n=4
+for i in range(4):
+    l2.append(l[i])
+    l2.append(l[i+4])
+print(l2)    
