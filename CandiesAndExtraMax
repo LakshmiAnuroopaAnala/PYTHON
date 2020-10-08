@@ -1,0 +1,12 @@
+l=[2,3,5,1,3]
+ex=3
+l2=list()
+for i in l:
+    if i+ex >= max(l):
+        l2.append("True")
+    else:
+        l2.append("False")
+print(l2)
+
+l=[t if i +x>=m else f for i in a]
+
