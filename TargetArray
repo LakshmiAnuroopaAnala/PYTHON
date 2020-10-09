@@ -1,0 +1,6 @@
+num=[1,2,3,4,0]
+index=[0,1,2,3,0]
+t=[]
+for i in range(len(index)):
+    t.insert(index[i],num[i])
+print(t)
