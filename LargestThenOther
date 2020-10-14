@@ -1,0 +1,8 @@
+def Largest(l):
+    for i in l:
+        if not(i*2<=max(l)) and i!=max(l):
+            return -1
+    else:
+        return l.index(max(l))
+l=[3,1,6,0]
+print(Largest(l))
