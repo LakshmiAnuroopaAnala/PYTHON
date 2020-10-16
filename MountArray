@@ -1,0 +1,17 @@
+l=[0,2,3,4,5,2,1,0]  #TRUE
+#l=[0,1,1]  #FALSE because two equal values
+#l=[0,1,2,3,5] #FALSE because of max index is equal to length of list
+if l.index(max(l))==len(l)-1:
+    print("False")
+else:
+    for i in range(0,l.index(max(l))-1):
+        if not l[i]<l[i+1]:
+            print("False")
+            break
+    else:
+        for i in range(l.index(max(l)),len(l)-1):
+            if not l[i]>l[i+1]:
+                print("False")
+                break
+        else:
+             print("True")
