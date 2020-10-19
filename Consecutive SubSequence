@@ -1,0 +1,28 @@
+def ConsecutiveSubArray(l,m,k):
+    i=0
+    c=0
+    l2=list()
+    while i<len(l)-m:
+        l2=l[i:i+m]
+        for j in range(i,len(l)):
+            if l2==l[j:j+m]:
+                c=c+1
+            else:
+                break
+        if c>=k:
+            return True
+        else:
+            c=0
+            i+=m
+    else:
+        return False
+l=input().split()
+m=int(input())
+k=int(input())
+if l.count(l[0])==len(l):
+    if len(l)//m>=k:
+        print("True")
+    else:
+         print("False")
+else:
+    print(ConsecutiveSubArray(l,m,k))
