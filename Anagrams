@@ -1,0 +1,19 @@
+s1=input()
+s2=input()
+a=[0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0]
+b=[0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0]
+for i in range(0,len(s1)):
+    ind=ord(s1[i])-97
+    a[ind]+=1
+    #print(s1[i],a[ind])
+ind=0    
+for i in range(0,len(s1)):
+    ind=ord(s2[i])-97
+    b[ind]+=1
+    #print(s1[i],b[ind])
+#print(a)
+#print(b)
+if a==b:
+    print("Anagram")
+else:
+   print("Not Anagram") 
