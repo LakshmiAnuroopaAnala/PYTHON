@@ -1,0 +1,16 @@
+l=list(map(int,input().split()))
+s=int(input("Starting Point "))
+d=int(input("Ending Point "))
+min=0
+max=0
+for i in range(s,d):
+    #print(l[i])
+    min=min+l[i]
+for i in range(len(l)-1,d-1,-1):
+    #print(l[i])
+    max=max+l[i]
+print(min,max)    
+if min<max:
+    print(min)
+else:
+    print(max)
