@@ -1,0 +1,11 @@
+l=list(map(int,input().split()))
+s=int(input("Starting Point "))
+d=int(input("Ending Point "))
+t=sum(l)
+d1=sum(l[s:d])
+d2=t-d1
+#print(d1,d2)
+if d1<d2:
+    print(d1)
+else:
+    print(d2)
