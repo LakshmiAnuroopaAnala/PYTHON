@@ -1,0 +1,11 @@
+a1=list(map(int,input().split()))#[4,5,8]
+a2=list(map(int,input().split()))#[10,8,1,8]
+d=int(input())
+c=0
+for i in a1:
+    for j in a2:
+        if abs(i-j)<=d:
+            c+=1
+            break
+print(len(a1)-c)           
+            
