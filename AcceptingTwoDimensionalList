@@ -1,0 +1,8 @@
+l=[]
+for i in range(3):
+    c=[]
+    c.append(list(map(int,input().split())))
+    #c.append(int(input()))
+    l.append(c)    
+
+print(l)        
