@@ -1,0 +1,7 @@
+k=list(map(int,input().split(" ")))
+print(k)
+min=k[0]
+for i in range(1,len(k)):
+    if min>k[i]:
+        min=k[i]
+print(min)
