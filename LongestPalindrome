@@ -1,0 +1,18 @@
+d={}
+flag=0
+sum=0
+for i in s:
+  if i in d:
+      d[i]+=1
+  else:
+      d[i]=1
+for i in d:
+   if not(d[i]%2==0):
+       flag=1
+       break
+for i in d:
+   if d[i]%2==0:
+      sum=sum+d[i]
+   else:
+     sum=sum+(d[i]-1)
+print(sum+flag_)
