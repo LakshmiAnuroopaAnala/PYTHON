@@ -1,0 +1,30 @@
+def sharpeArray(arr):
+    if len(arr)==1:
+        return "Yes"
+    left=0
+    right=0
+    for i in range(0,len(arr)):
+        if arr[i]>=i:
+            left=i
+            #print("left ",left)
+        else:
+            break
+    val=0
+    for i in range(len(arr)-1,-1,-1):
+        if arr[i]>=val:
+            right=i
+            #print("right ",right)
+        else:
+            break
+        val+=1
+    #print("left ",left,"right ",right)
+    if left>=right:
+        return "Yes"
+    else:
+        return "No"
+testCases=int(input())
+for _ in range(0,testCases):
+    n=int(input())
+    arr=[]
+    arr=list(map(int,input().split(" ")))
+    print(sharpeArray(arr))
